@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="selection">
+            <h2>Selection</h2>
+            <label for="countrySelect">Select a Country:</label>
+            <select id="countrySelect">
+                <option value="Morocco" selected>Morocco</option>
+            </select>
+            <label for="citySelect">Select a City:</label>
+            <select id="citySelect">
+                <option value="Casablanca" selected>Casablanca</option>
+            </select>
+        </div>
+
+        <div class="current-temperature">
+            <h2>Current Temperature</h2>
+            <p id="currentTemperature">Thanks for waiting...</p>
+            <div class="details">
+                <p><span class="title">Precipitation:</span><span class="detail">3%</span></p>
+                <p><span class="title">Humidity:</span><span class="detail">77%</span></p>
+                <p><span class="title">Wind:</span><span class="detail">12 Km/h</span></p>
+            </div>
+        </div>
+
+        <div class="hourly-temperature">
+            <h2>Hourly Temperatures</h2>
+            <ul id="hourlyTemperatures">
+            </ul>
+        </div>
+    </div>
+ <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>

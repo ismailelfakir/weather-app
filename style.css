@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('./maggs.jpg');
+    background-size: 100% auto; 
+    background-repeat: repeat-y;
+    width: 100%;
+}
+
+/* body.day{
+  background-image: url('./blue-sky.jpg');
+}
+
+body.day .current-temperature{
+  color: #666666;
+} */
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background: rgba(253, 253, 253, 0.85);
+  }
+  .selection {
+    flex: 0 0 30%;
+    padding: 16px;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(241, 237, 255, 0.75);
+    border-radius: 10px 0 0 10px;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+  }
+
+  #countrySelect{
+    margin-bottom: 40px;
+  }
+  .current-temperature{
+    flex: 0 0 40%;
+    padding: 16px;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+    color: #ccc;
+  }
+  .current-temperature .details{
+    flex: 0 0 100%;
+    text-align: start;
+    padding: 20px 10px;
+  }
+  .current-temperature .details p {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .current-temperature .details p .title{
+    font-weight: 600;
+  }
+  .hourly-temperature {
+    flex: 0 0 30%;
+    padding: 16px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-radius: 0 10px 10px 0 ;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+  }
+  h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color:aqua;
+    margin-bottom: 30px;
+  }
+  .selection h2{
+    color: #190121;
+  }
+  .current-temperature #currentTemperature {
+    font-size: 30px;
+    font-weight: 600;
+    width: auto;
+    height: 150px;
+    background: rgba(14, 0, 66, 0.5);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .hourly-temperature ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .hourly-temperature li {
+    flex: 0 0 45%; 
+    background-color: #f5f5f5;
+    padding: 4px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .hourly-temperature li:hover {
+    transform: scale(1.1); 
+    cursor: pointer;
+  } 
+
+  .hourly-temperature #hourlyTemperatures .currentHour {
+    background-color: aqua;
+  }
+
+  @media (max-width: 1050px) 
+  {
+    .selection {
+      flex: 0 0 100%;
+      border-radius: 10px 10px 0 0 ;
+    }
+    .current-temperature{
+      flex: 0 0 50%;
+      border-radius: 0 0 0 10px;
+    }
+    .hourly-temperature{
+      flex: 0 0 50%;
+      border-radius: 0 0 10px 0 ;
+    }
+    #countrySelect{
+      margin-bottom: 15px;
+    }
+    .selection h2{
+      margin-bottom: 15px;
+    }
+  }
+
+  @media (max-width: 640px)
+  {
+    .current-temperature{
+      flex: 0 0 100%;
+      border-radius: 0 0 0 0;
+    }
+    .hourly-temperature{
+      flex: 0 0 100%;
+      border-radius: 0 0 10px 10px;
+    }
+    .hourly-temperature li {
+      flex: 0 0 30%; 
+    }
+  } 
+  @media (max-width: 475px)
+  {
+    .hourly-temperature li {
+      flex: 0 0 45%; 
+    }
+  } 
+  @media (max-width: 350px)
+  {
+    .hourly-temperature li {
+      flex: 0 0 100%; 
+    }
+  }
